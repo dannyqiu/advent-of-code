@@ -7,7 +7,7 @@ function processData() {
         return;
     }
     var wires = parseInstructions(input);
-    valueA = getValue('a', wires);
+    var valueA = getValue('a', wires);
     wires = parseInstructions(input); // reparse input
     wires['b'] = [valueA]; // override b with signal from a
     console.log("Value of a after remapping: " + getValue('a', wires));

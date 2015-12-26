@@ -7,12 +7,12 @@ function processData() {
         return;
     }
     var wrappingPaper = 0;
-    boxes = input.split("\n");
+    var boxes = input.split("\n");
     boxes.forEach(function(box) {
         if (box == '') {
             return;
         }
-        dim = box.split('x').map(Number);
+        var dim = box.split('x').map(Number);
         wrappingPaper += getWrappingPaperForDimensions(dim[0], dim[1], dim[2]);
     });
     console.log("It takes this many square feet of wrapping paper: " + wrappingPaper);

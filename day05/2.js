@@ -6,8 +6,8 @@ function processData() {
     if (input == null) {
         return;
     }
-    strings = input.split("\n");
-    niceStrings = 0;
+    var strings = input.split("\n");
+    var niceStrings = 0;
     strings.forEach(function(string) {
         nice = checkRepeatingPair(string) && checkRepeatingLetter(string);
         if (nice) {
@@ -21,8 +21,8 @@ function processData() {
  * Checks that the string contains a pair of letters that appears at least twice in the string without overlapping
  */
 function checkRepeatingPair(string) {
-    pairs = {}
-    prev = string.substring(0, 2);
+    var pairs = {}
+    var prev = string.substring(0, 2);
     pairs[prev] = 1;
     for (var i = 1; i < string.length-1; ++i) {
         cur = string.substring(i, i+2);

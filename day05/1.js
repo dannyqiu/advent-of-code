@@ -6,8 +6,8 @@ function processData() {
     if (input == null) {
         return;
     }
-    strings = input.split("\n");
-    niceStrings = 0;
+    var strings = input.split("\n");
+    var niceStrings = 0;
     strings.forEach(function(string) {
         nice = checkVowels(string) && checkLetters(string) && checkStringCombinations(string);
         if (nice) {
@@ -49,9 +49,9 @@ function checkLetters(string) {
  * Checks that the string doesn't contain the following string combinations:
  *     ab, cd, pq, xy
  */
+badStrings = ["ab", "cd", "pq", "xy"];
 function checkStringCombinations(string) {
-    badStrings = ["ab", "cd", "pq", "xy"];
-    good = true;
+    var good = true;
     badStrings.forEach(function(bad) {
         if (string.indexOf(bad) != -1) {
             good = false;

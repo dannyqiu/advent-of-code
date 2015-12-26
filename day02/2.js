@@ -7,20 +7,20 @@ function processData() {
         return;
     }
     var ribbon = 0;
-    boxes = input.split("\n");
+    var boxes = input.split("\n");
     boxes.forEach(function(box) {
         if (box == '') {
             return;
         }
-        dim = box.split('x').map(Number);
+        var dim = box.split('x').map(Number);
         ribbon += getRibbonForDimensions(dim[0], dim[1], dim[2]);
     });
     console.log("It takes this many feet of ribbon: " + ribbon);
 }
 
 function getRibbonForDimensions(l, w, h) {
-    shortest = l;
-    shorter = w;
+    var shortest = l;
+    var shorter = w;
     if (w < l) {
         shortest = w;
         shorter = l;

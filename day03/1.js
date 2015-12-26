@@ -8,9 +8,9 @@ function processData() {
     }
     var santaX = 0;
     var santaY = 0;
-    locations = {}
+    var locations = {}
     addPresentMapping(locations, santaX, santaY);
-    directions = input.split("");
+    var directions = input.split("");
     directions.forEach(function(dir) {
         if (dir == "<") {
             santaX--;

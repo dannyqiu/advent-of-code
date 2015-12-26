@@ -31,7 +31,7 @@ function processData() {
 function adjustLights(lights, value, startX, startY, endX, endY) {
     for (var i = startX; i <= endX; ++i) {
         for (var j = startY; j <= endY; ++j) {
-            key = (i << 16) + j;
+            var key = (i << 16) + j;
             if (lights[key] === undefined) {
                 lights[key] = 0;
             }

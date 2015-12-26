@@ -10,10 +10,10 @@ function processData() {
     var santaY = 0;
     var roboX = 0;
     var roboY = 0;
-    locations = {};
+    var locations = {};
     addPresentMapping(locations, santaX, santaY);
     addPresentMapping(locations, roboX, roboY);
-    directions = input.split("");
+    var directions = input.split("");
     for (var i = 0; i < directions.length; i += 2) {
         var dir = directions[i];
         if (dir == "<") {
