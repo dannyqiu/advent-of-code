@@ -8,10 +8,14 @@ function processData() {
     }
     var wires = parseInstructions(input);
     //console.log(wires);
+    var wiresToGet;
     if (process.argv.length <= 2) {
         console.log("Usage: " + process.argv.join(' ') + " [vars ...]");
+        wiresToGet = ['a'];
     }
-    var wiresToGet = process.argv.slice(2, process.argv.length);
+    else {
+        wiresToGet = process.argv.slice(2, process.argv.length)
+    }
     for (var i = 0; i < wiresToGet.length; ++i) {
         if (wires[wiresToGet[i]] != undefined) {
             var value = getValue(wiresToGet[i], wires);
