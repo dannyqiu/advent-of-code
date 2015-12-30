@@ -1,0 +1,11 @@
+You fill the weather machine with fifty stars. It comes to life!
+
+Snow begins to fall.
+
+Congratulations! You've finished every puzzle! I hope you had as much fun solving them as I had making them for you. I'd love to hear about your adventure; you can get in touch with me via contact info on my website or through Twitter.
+
+Advent is over, but Advent of Code isn't going anywhere. You can support it by donating or even just sharing it with others.
+
+If you'd like to hear about projects I release in the future, you can follow me on Twitter.
+
+I've also highlighted the easter eggs in each puzzle, just in case you missed any. Hover your mouse over them, and the easter egg will appear.
