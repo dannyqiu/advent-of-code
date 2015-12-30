@@ -14,3 +14,9 @@ Each solution reads input from stdin and outputs the answer for the day and asso
     `node 2.js < input.txt` will give the solution for part 2
 
 Some solutions may also allow command line arguments for special problem requests (i.e. Cookie calories on [day 15](/day15/problem.txt#L32))
+
+---
+
+**MERRY CHRISTMAS!**
+
+![Christmas Tree](tree.png)
