@@ -1,6 +1,21 @@
+# ocamlbuild working directory
+_build/
+*.byte
+*.native
+
 # Compiled Files #
 a.out
+*.gch
+*.so
 *.class
+*.cmo
+*.cma
+*.cmi
+*.a
+*.o
+*.cmx
+*.cmxs
+*.cmxa
 
 # Text Backup Files #
 *.sw[a-z]
