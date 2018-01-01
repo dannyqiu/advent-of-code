@@ -8,9 +8,9 @@ p1: p1.ml
 	./p1.byte < input.txt
 
 p2: p2.ml
-	ocamlbuild -pkgs $(OCAMLPKGS) p2.byte
+	ocamlbuild -pkgs $(OCAMLPKGS) p2.native
 	@printf "\n"
-	./p2.byte < input.txt
+	./p2.native < input.txt
 
 run: p1 divider p2
 
@@ -19,6 +19,6 @@ divider:
 
 clean:
 	ocamlbuild -clean
-	rm -f p1.byte p2.byte
+	rm -f p1.byte p2.native
 
 .PHONY: all build run clean
