@@ -5,6 +5,7 @@ _build/
 
 # Compiled Files #
 a.out
+*.exe
 *.gch
 *.so
 *.class
